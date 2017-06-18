@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
@@ -48,6 +50,12 @@ public class PostActivity extends AppCompatActivity {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                 progressDialog.dismiss();
+                String postImageUrl = taskSnapshot.getDownloadUrl().toString();
+                String postTitle = titleEditText.getText().toString();
+                String postDescription = descriptionEditText.getText().toString();
+                Post post = new Post(postTitle, postDescription, postImageUrl);
+                DatabaseReference blogPostRef = FirebaseDatabase.getInstance().getReference("blog_posts");
+                blogPostRef.push().setValue(post);
             }
         });
     }

@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "860932026539",
+    "firebase_url": "https://bartinybs-3df47.firebaseio.com",
+    "project_id": "bartinybs-3df47",
+    "storage_bucket": "bartinybs-3df47.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860932026539:android:272d461736770d2f",
+        "android_client_info": {
+          "package_name": "com.bartinybs.social"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860932026539-q9vdn4gr41jboqgmc0dnfvd5it0l7m7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCj46EDyla-Kxw1AbRXqmVkzmc1S2eQX7s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860932026539:android:20d79454e0ade4b8",
+        "android_client_info": {
+          "package_name": "com.gelecegiyazankadinlar.blog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860932026539-q9vdn4gr41jboqgmc0dnfvd5it0l7m7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCj46EDyla-Kxw1AbRXqmVkzmc1S2eQX7s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

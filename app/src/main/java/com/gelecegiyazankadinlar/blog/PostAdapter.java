@@ -40,8 +40,6 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
         holder.itemTitle.setText(post.getTitle());
         holder.itemDescription.setText(post.getDescription());
 
-        Log.d("IMAGE_URL", "onBindViewHolder: " + post.getImageUrl());
-
         Picasso.with(context)
                 .load(post.getImageUrl())
                 .into(holder.itemImage);
